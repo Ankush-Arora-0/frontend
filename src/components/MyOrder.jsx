@@ -11,7 +11,7 @@ export const MyOrder = () => {
     const [order1,setOrder1]=useState(null);
     const myOrder = async()=>{
         try{
-            const res = await fetch('http://localhost:5000/myorders',{
+            const res = await fetch('https://ecommerce-bac.onrender.com/myorders',{
                 method:"GET",
                 headers:{
                     'Content-Type':'application/json'
