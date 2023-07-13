@@ -9,7 +9,7 @@ export const Admin = () => {
   const[orderData,setOrderdata]=useState([{}])
   const allOrder=async()=>{
     try{
-      const res = await fetch('http://localhost:5000/allorder',{
+      const res = await fetch('https://ecommerce-bac.onrender.com/allorder',{
         method:'GET',
         headers:{
           'Content-Type':"application/json"
