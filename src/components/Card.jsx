@@ -10,7 +10,7 @@ export const Card = (props) => {
   const[pstatus,setPstatus]=useState("Not Proccessed");
   const cartAdd =async()=>{
     try{
-        const res = await fetch('http://localhost:5000/cart',{
+        const res = await fetch('https://ecommerce-bac.onrender.com/cart',{
           method:'POST',
           headers:{
             'Content-Type':'application/json'
@@ -40,7 +40,7 @@ export const Card = (props) => {
   }
   const getNow = async()=>{
     try{
-      const res = await fetch('http://localhost:5000/getdata',{
+      const res = await fetch('https://ecommerce-bac.onrender.com/getdata',{
         method:"GET",
         headers:{
           "Content-Type":"application/json"
@@ -67,7 +67,7 @@ export const Card = (props) => {
     const date =  new Date().toLocaleDateString();
     const time = new Date().toLocaleTimeString();
     try{
-      const res  = await fetch('http://localhost:5000/orderhome',{
+      const res  = await fetch('https://ecommerce-bac.onrender.com/orderhome',{
         method:"POST",
         headers:{
           'Content-Type':"application/json"
