@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import './Phone.css';
+
+.cart_bdy {
+    text-align: center;
+
+}
+
+.cart_bdy h1 {
+    color: gray;
+    font-family: 'Raleway', sans-serif;
+    margin: 2vh auto;
+    margin-top: 12vh;
+    font-size: calc((5vw + 5vh)/2);
+}
+
+.my_order {
+    float: right;
+    background-color: black;
+    color: white;
+    width: calc((25vw + 25vh)/2);
+    text-decoration: none;
+    box-sizing: border-box;
+    height: calc((5vw + 5vh)/2);
+    border-radius: 5px;
+    margin-right: 5vw;
+    margin-top: 14vh;
+    font-size: calc((2vw + 2vh)/2) !important;
+    position: absolute;
+    right: 1vw;
+    top: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.my_order:hover {
+    transition: all 1s;
+    transform: scale(1.1);
+}
+
+.pop_up {
+    background-color: rgb(255, 253, 253);
+    width: 290px;
+    height: 45px;
+    position: absolute;
+    top: 80px;
+    left: 41%;
+    border-radius: 7px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.pop_up span {
+    margin: auto 20px;
+    text-transform: capitalize;
+    font-size: 17px;
+}
+
+.line {
+    border-top: 5px solid red;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    top: 42px;
+    left: -283px;
+
+    transition: all 1s linear;
+}
+
+@keyframes line_move {
+    0% {
+        left: -283px;
+    }
+
+    100% {
+        left: 0px;
+
+    }
+}
+
+.animate-line {
+    animation: line_move linear 5s infinite;
+}

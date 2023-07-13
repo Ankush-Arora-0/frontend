@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import './Phone.css';
+
+.ad_panl{
+    margin-top: 15vh;
+    display: flex;
+}
+.adm_lft{
+    width: calc((30vw + 30vh)/2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 1vh 2vw;
+}
+.ad_llink{
+    width: 80%;
+    height: 13%;
+    padding: 0.4vw;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px auto;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    border-radius: 3x;
+    color: black;
+    font-weight: bold;
+    font-size: calc((2.5vw + 2vh)/2);
+}
+.adm_lft h1{
+    width: 80%;
+    height: 14%;
+    margin: 8% auto;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid black;
+    font-size: calc((3.4vw + 3.4vh)/2);
+    border-radius: 3x;
+    margin-bottom: 10%;
+    color: rgb(0, 0, 0);
+}
+.adm_lft_box{
+    width: calc((30vw + 30vh)/2);
+    height: calc((30vw + 40vh)/2);
+    background-color: rgba(208, 194, 194, 0.617);
+    box-shadow: 2px 2px 2px 2px gray;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin: 5px auto;
+}
+.ad_llink:hover{
+    background-color: white;
+    border-radius: 5px;
+    transition: all 1s;
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px 2px gray;
+}
+.adm_rgt{
+    width: calc((67vw + 57vh)/2);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 1vh auto;
+}
+
+.adm_rgt h1{
+    margin-top: 0px;
+    font-size: calc((3.4vw + 3.4vh)/2);
+}

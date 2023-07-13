@@ -1,0 +1,73 @@
+@import './Phone.css';
+#rmv_btn{
+
+    background-color: red;
+}
+#card_bdy{
+    width: calc((25vw + 37.5vh)/2) !important;
+    height: calc(((17vw + 36vh)/2)*1.5) !important;
+    margin: 2vh 3vw;
+    
+    position: relative;
+    float: left;
+    margin-top: 70px;
+    overflow: inherit;
+    
+
+}
+.pro_price{
+    margin-right: 10px;
+}
+.pro_name{
+    margin-left: 10px;
+}
+#rmv_btn{
+    height: 5vh !important;
+    width: 100% !important;
+    font-size: calc((1vw + 2vh)/2);
+    padding: 0px;
+}
+#rmv_btn:hover{
+    transition: all 1s;
+    transform:  scale(1.1);
+}
+#buy_btn:hover{
+    transition: all 1s;
+    transform:  scale(1.1);
+}
+#buy_btn{    
+    height: 5vh !important;
+    width: 100% !important;
+    font-size: calc((1vw + 2vh)/2);
+    padding: 0px;
+}
+.confrm_buy{
+    width: 140%;
+    height: 230px;
+    background-color: rgba(201, 183, 183, 0.765);
+    z-index: 2;
+    border-radius: 5px;
+    position: absolute;
+    top: 30%;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.confrm_buy label{
+    font-size: 20px;
+    margin: 10px 0px
+}
+.confrm_buy select{
+    width: 40px;
+    font-size: 15px;
+    margin: 2px 10px;
+}
+.addre{
+    display: flex;
+    flex-direction: column;
+}
+.addre textarea{
+    width: 50%;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}

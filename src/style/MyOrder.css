@@ -1,0 +1,33 @@
+@import './Phone.css';
+#cd_bdy{
+    width: 70%;
+    margin: 20px auto;
+}
+.order_page h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 30vw ;
+    margin: 40px auto;
+    font-size: calc((3vw + 3vh)/2);
+}
+.order_page{
+    width: 100%;
+}
+.shop_now{
+    display: block;
+    width: 150px !important;
+    height: 40px;
+    background-color: green;
+    color: white;
+    border-radius: 7px;
+    margin: 10px auto;
+    text-align: center;
+    text-decoration: none;
+    padding: 6px;
+    box-sizing: border-box;
+}
+.shop_now:hover{
+    transform: scale(1.1);
+    transition: all 1s ease-in-out;
+    background-color: rgba(7, 174, 7, 0.844);
+
+}

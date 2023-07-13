@@ -1,0 +1,37 @@
+@import './Phone.css';
+.add_prod_bdy{
+    box-shadow: 0px 0px 5px 2px gray;
+    width: 70%;
+    height: calc(50vw + 70vh)/2;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+#prodimg{
+    margin: 20px;
+}
+.prod_detail{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.prod_inp{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+}
+#proddesc{
+    height: 60px;
+}
+#upl_prod_btn{
+    margin: 20px;
+    background-color: black;
+}
+#upl_prod_btn:hover{
+    
+    transition: all 1s;
+    transform: scale(1.1);
+}
+#prodcateg{
+    width: 200px;
+    height: 30px;
+}
