@@ -40,7 +40,7 @@ export const Login = (props) => {
       e.preventDefault();
       const{email,pass} = lData;
       try{
-      const res = await fetch('http://localhost:5000/login',{
+      const res = await fetch('https://ecommerce-bac.onrender.com/login',{
       method:"POST",
       headers:{
         'Content-Type': 'application/json',
