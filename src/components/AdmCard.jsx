@@ -6,7 +6,7 @@ export const AdmCard = (props) => {
     const [statuss,setStatuss]=useState("");
     const changeStatus=async(stats)=>{
         try{
-            const res = await fetch('http://localhost:5000/upstatus',{
+            const res = await fetch('https://ecommerce-bac.onrender.com/upstatus',{
                 method:'PUT',
                 headers:{
                     'Content-Type':'application/json',
