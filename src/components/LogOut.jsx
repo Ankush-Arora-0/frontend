@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
     const navigate = useNavigate();
     const callLogoutPage = async()=>{
         try{
-              const res = await fetch("http://localhost:5000/logout",{
+              const res = await fetch("https://ecommerce-bac.onrender.com/logout",{
                 method:"GET",
                 headers:{
                   'Content-Type': 'application/json',
