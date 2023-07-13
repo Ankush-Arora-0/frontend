@@ -98,7 +98,7 @@ export const Registration = () => {
     e.preventDefault();
 
     const { fName, email, pnumber, profes, pass, cpass } = fData;
-    const res = await fetch('http://localhost:5000/register', {
+    const res = await fetch('https://ecommerce-bac.onrender.com/register', {
       method: "POST",
       headers: {
         'Content-Type': 'application/json',
