@@ -67,13 +67,14 @@ export const Home = (props) => {
             }
             );
             const data = await res.json();
+            console.log(data);
             if (res.status === 401) {
                 props.dispatch({ type: "User", payload: false });
             }
             setHomedata(data);
           
         } catch (err) {
-           
+           console.log(err);
         }
     }
 
