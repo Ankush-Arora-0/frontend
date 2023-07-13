@@ -79,7 +79,7 @@ export const AdminAdd = () => {
         
         const {img}= imgFile;
        
-        const res = await fetch('http://localhost:5000/admin/crtprod',{
+        const res = await fetch('https://ecommerce-bac.onrender.com/admin/crtprod',{
       method:"POST",
       headers:{
         'Content-Type': 'application/json',
