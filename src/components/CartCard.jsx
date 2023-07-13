@@ -12,7 +12,7 @@ export const CartCard = (props) => {
 
   const rmvItem = async () => {
     try {
-      const res = await fetch('http://localhost:5000/rmitem', {
+      const res = await fetch('https://ecommerce-bac.onrender.com/rmitem', {
         method: "DELETE",
         headers: {
           'Content-Type': 'application/json'
@@ -39,7 +39,7 @@ export const CartCard = (props) => {
     try {
       const date = new Date().toLocaleDateString();
       const time = new Date().toLocaleTimeString();
-      const res = await fetch("http://localhost:5000/api/checkout", {
+      const res = await fetch("https://ecommerce-bac.onrender.com/api/checkout", {
         method: "POST",
         headers: {
           'Content-Type': 'application/json'
@@ -58,7 +58,7 @@ export const CartCard = (props) => {
         description: "Test Transaction",
         image: "https://avatars.githubusercontent.com/u/127427325?s=400&u=97a69d0a486469c080526511efdd58b0d7172ae1&v=4",
         order_id: data.order.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
-        callback_url: "http://localhost:5000/api/paymentverification", 
+        callback_url: "https://ecommerce-bac.onrender.com/api/paymentverification", 
         prefill: {
           name: props.cname,
           email: props.email,
