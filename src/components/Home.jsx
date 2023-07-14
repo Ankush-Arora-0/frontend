@@ -58,7 +58,7 @@ export const Home = (props) => {
 
     const HomeData = async () => {
         try {
-            const res = await fetch('https://ecommerce-bac.onrender.com/home', {
+            const res = await fetch('/home', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
